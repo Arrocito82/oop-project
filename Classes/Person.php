@@ -48,6 +48,11 @@ class Employee{
         $this->email=$email;
         $this->age=$age;
     }
+
+    public function __destruct()
+    {
+        echo "Object deleted!";
+    }
     private function get_fullname()
     {
         $fullname= $this->firstname ." ".$this->lastname;
