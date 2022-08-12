@@ -32,13 +32,20 @@
     
     OUTPUT:
     Warning: Undefined variable $employee01 in /var/www/OOP-Project/index.php on line 29
-
+    
     Fatal error: Uncaught Error: Call to a member function get_email() on null 
     in /var/www/OOP-Project/index.php:29 Stack trace: #0 {main} thrown 
     in /var/www/OOP-Project/index.php on line 29
     */
-
-
+    echo '<br>';
+    // echo Employee::$ageOfLegalMajority; it's a private attribute
+    echo Employee::$drinkingAge;
+    echo '<br>';
+    echo Employee::getAgeOfLegalMajority();
+    echo '<br>';
+    Employee::setAgeOfLegalMajority(18);
+    echo Employee::getAgeOfLegalMajority();
+    
     ?>
 </body>
 </html>

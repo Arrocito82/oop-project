@@ -38,6 +38,8 @@ class Employee{
     private $lastname="Monterrosa";
     private $email="example@example.com";
     private $age="23";
+    public static $drinkingAge=18;
+    private static $ageOfLegalMajority=21;
 
     // This is a constructor class
     public function __construct($firstname,$lastname,$email,$age)
@@ -72,5 +74,15 @@ class Employee{
     {
         $this->email=$email;
     }
+    public static function getAgeOfLegalMajority()
+    {
+        // use self:: intead of $this-> keyword when static
+        return self::$ageOfLegalMajority;
+    }
+    public static function setAgeOfLegalMajority($age)
+    {
+        return self::$ageOfLegalMajority=$age;
+    }
+
 }
 
