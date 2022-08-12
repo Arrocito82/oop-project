@@ -31,3 +31,41 @@ class Pet extends Person{
         return parent::owner();
     }
 }
+
+// 5: Constructor and Destructors
+class Employee{
+    private $firstname="Andrea";
+    private $lastname="Monterrosa";
+    private $email="example@example.com";
+    private $age="23";
+
+    // This is a constructor class
+    public function __construct($firstname,$lastname,$email,$age)
+    {
+        // use an arrow -> instead of dot .
+        $this->firstname=$firstname;
+        $this->lastname=$lastname;
+        $this->email=$email;
+        $this->age=$age;
+    }
+    private function get_fullname()
+    {
+        $fullname= $this->firstname ." ".$this->lastname;
+        return $fullname;
+    }
+
+    public function get_info()
+    {
+        return "I'm ".$this->get_fullname()." and I'm ".$this->age." years old.";
+    }
+
+    public function get_email()
+    {
+        return $this->email;
+    }
+    public function set_email($email)
+    {
+        $this->email=$email;
+    }
+}
+
