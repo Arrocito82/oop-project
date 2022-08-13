@@ -1,3 +1,4 @@
+<?php include 'include/classes.php';?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +9,7 @@
 </head>
 <body>
     <?php
-    include './Classes/Person.php';
+    // include './Classes/Person.php';
 
     //4: Visibility and Inheritance
     $pet01=new Pet();
