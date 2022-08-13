@@ -1,4 +1,7 @@
-<?php include_once 'Classes/Pet.php';?>
+<?php 
+include_once 'Classes/Pet.php';
+include_once 'Classes/Employee.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,16 +20,16 @@
     echo '<br>';
     
     // 5: Constructor and Destructors
-    // $employee01=new Employee("Juan","Valdez","valdez@gmail.com","25");
-    // echo $employee01->get_info();
-    // echo '<br>';
-    // echo $employee01->get_email();
-    // echo '<br>';
-    // $employee01->set_email("employee01@example.es");
-    // echo $employee01->get_email();
+    $employee01=new People\Employee("Juan","Valdez","valdez@gmail.com","25");
+    echo $employee01->get_info();
+    echo '<br>';
+    echo $employee01->get_email();
+    echo '<br>';
+    $employee01->set_email("employee01@example.es");
+    echo $employee01->get_email();
     
     // //Delete objects
-    // unset($employee01);
+    unset($employee01);
     //echo $employee01->get_email();
     /* 
     trying to access a attribute of deleted object

@@ -1,10 +1,11 @@
 <?php 
+namespace People;
 // 5: Constructor and Destructors
-class Employee{
-    private $firstname="Andrea";
-    private $lastname="Monterrosa";
-    private $email="example@example.com";
-    private $age="23";
+class Employee extends \Person{
+//     private $firstname="Andrea";
+//     private $lastname="Monterrosa";
+//     private $email="example@example.com";
+//     private $age="23";
     public static $drinkingAge=18;
     private static $ageOfLegalMajority=21;
 
