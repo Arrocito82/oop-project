@@ -1,4 +1,5 @@
 <?php
+// namespace People;
 // 3: Create Classes 
 /*
 class Person{

@@ -1,4 +1,4 @@
-<?php include 'include/classes.php';?>
+<?php include_once 'Classes/Pet.php';?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,21 +12,21 @@
     // include './Classes/Person.php';
 
     //4: Visibility and Inheritance
-    $pet01=new Pet();
+    $pet01=new Pet\Pet();
     echo $pet01->get_owner();
     echo '<br>';
     
     // 5: Constructor and Destructors
-    $employee01=new Employee("Juan","Valdez","valdez@gmail.com","25");
-    echo $employee01->get_info();
-    echo '<br>';
-    echo $employee01->get_email();
-    echo '<br>';
-    $employee01->set_email("employee01@example.es");
-    echo $employee01->get_email();
+    // $employee01=new Employee("Juan","Valdez","valdez@gmail.com","25");
+    // echo $employee01->get_info();
+    // echo '<br>';
+    // echo $employee01->get_email();
+    // echo '<br>';
+    // $employee01->set_email("employee01@example.es");
+    // echo $employee01->get_email();
     
-    //Delete objects
-    unset($employee01);
+    // //Delete objects
+    // unset($employee01);
     //echo $employee01->get_email();
     /* 
     trying to access a attribute of deleted object
@@ -38,14 +38,14 @@
     in /var/www/OOP-Project/index.php:29 Stack trace: #0 {main} thrown 
     in /var/www/OOP-Project/index.php on line 29
     */
-    echo '<br>';
-    // echo Employee::$ageOfLegalMajority; it's a private attribute
-    echo Employee::$drinkingAge;
-    echo '<br>';
-    echo Employee::getAgeOfLegalMajority();
-    echo '<br>';
-    Employee::setAgeOfLegalMajority(18);
-    echo Employee::getAgeOfLegalMajority();
+    // echo '<br>';
+    // // echo Employee::$ageOfLegalMajority; it's a private attribute
+    // echo Employee::$drinkingAge;
+    // echo '<br>';
+    // echo Employee::getAgeOfLegalMajority();
+    // echo '<br>';
+    // Employee::setAgeOfLegalMajority(18);
+    // echo Employee::getAgeOfLegalMajority();
     
     ?>
 </body>
