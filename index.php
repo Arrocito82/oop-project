@@ -1,6 +1,7 @@
 <?php 
-include_once 'Classes/Pet/Pet.php';
-include_once 'Classes/People/Employee.php';
+include 'include/classes.php';
+// include_once 'Classes/Pet/Pet.php';
+// include_once 'Classes/People/Employee.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
