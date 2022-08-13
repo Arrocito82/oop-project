@@ -1,6 +1,6 @@
 <?php 
-include_once 'Classes/Pet.php';
-include_once 'Classes/Employee.php';
+include_once 'Classes/Pet/Pet.php';
+include_once 'Classes/People/Employee.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -41,14 +41,14 @@ include_once 'Classes/Employee.php';
     in /var/www/OOP-Project/index.php:29 Stack trace: #0 {main} thrown 
     in /var/www/OOP-Project/index.php on line 29
     */
-    // echo '<br>';
-    // // echo Employee::$ageOfLegalMajority; it's a private attribute
-    // echo Employee::$drinkingAge;
-    // echo '<br>';
-    // echo Employee::getAgeOfLegalMajority();
-    // echo '<br>';
-    // Employee::setAgeOfLegalMajority(18);
-    // echo Employee::getAgeOfLegalMajority();
+    echo '<br>';
+    // echo Employee::$ageOfLegalMajority; it's a private attribute
+    echo People\Employee::$drinkingAge;
+    echo '<br>';
+    echo People\Employee::getAgeOfLegalMajority();
+    echo '<br>';
+    People\Employee::setAgeOfLegalMajority(18);
+    echo People\Employee::getAgeOfLegalMajority();
     
     ?>
 </body>
